@@ -1,0 +1,13 @@
+default: &default
+  APP_NAME: 'News Camp'
+
+  DATABASE_NAME: 'news_camp'
+
+
+development:
+  <<: *default
+
+
+production:
+  <<: *default
+  SECRET_KEY_BASE: ''
