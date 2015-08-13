@@ -8,6 +8,7 @@ class CreateSiteContents < ActiveRecord::Migration
       t.string :keywords
       t.string :media
       t.string :icon
+      t.references :site, index: true
 
       t.timestamps null: false
     end
